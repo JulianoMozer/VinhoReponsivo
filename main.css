@@ -1,0 +1,275 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo do site */
+}
+
+header {
+    background-color: #8B0000; /* Cor do cabeçalho */
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative; /* Garante que o header fique acima de outros elementos */
+    z-index: 1000; /* Garante que o header e submenu fiquem acima de outros elementos */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .menu {
+    display: flex;
+    gap: 15px;
+}
+
+header .menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .search-bar {
+    border: 1px solid #d4af37; /* Cor da borda da barra de pesquisa */
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff; /* Cor de fundo da barra de pesquisa */
+}
+
+header .search-bar input {
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    width: 200px; /* Largura da barra de pesquisa */
+}
+
+header .search-bar input::placeholder {
+    color: #999999; /* Cor do texto do placeholder */
+}
+
+header .search-bar button {
+    padding: 10px 20px;
+    background-color: #8B0000; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .search-bar button:hover {
+    background-color: #6d0000; /* Cor do botão ao passar o mouse */
+}
+
+header .cart {
+    font-size: 18px;
+}
+
+/* Estilo para o menu principal */
+.menu-principal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333; /* Cor de fundo do menu principal */
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item > a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-item > a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444; /* Cor de fundo do submenu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 1000; /* Garante que o submenu fique acima de outros elementos */
+}
+
+.submenu li {
+    border-bottom: 1px solid #555; /* Cor da borda entre os itens do submenu */
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #666; /* Cor de fundo ao passar o mouse no submenu */
+}
+
+/* Mostrar o submenu ao passar o mouse */
+.menu-item:hover .submenu {
+    display: block;
+}
+
+/* Estilo para o carrossel */
+.grid-destaques {
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff; /* Cor de fundo dos destaques */
+    padding: 20px 0; /* Espaçamento ao redor do carrossel */
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+/* Estilo para a barra de pesquisa */
+.pesquisa {
+    padding: 20px;
+    background-color: #f4f4f4; /* Cor de fundo da barra de pesquisa */
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px; /* Largura da barra de pesquisa */
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #8B0000; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #6d0000; /* Cor do botão ao passar o mouse */
+}
+
+.produto {
+    min-width: 300px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff; /* Cor de fundo dos produtos */
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.botao-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo dos botões do carrossel */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Garante que os botões do carrossel fiquem acima do carrossel */
+}
+
+.botao-carrossel.prev {
+    left: 10px;
+}
+
+.botao-carrossel.next {
+    right: 10px;
+}
+
+/* Estilo para grids de produtos */
+.grid-tipos, .grid-produtos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Estilo para seção sobre a loja */
+.sobre-loja {
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff; /* Cor de fundo da seção sobre a loja */
+    padding: 20px;
+}
+
+.sobre-loja .coluna-imagem {
+    flex: 1;
+}
+
+.sobre-loja .coluna-texto {
+    flex: 1;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #8B0000; /* Cor de fundo do rodapé */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsivo para Tablet */
+@media (max-width: 768px) {
+    .grid-tipos, .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-loja {
+        flex-direction: column;
+    }
+}
+
+/* Responsivo para Smartphone */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .grid-destaques, .grid-tipos, .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-loja .coluna-imagem, .sobre-loja .coluna-texto {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}

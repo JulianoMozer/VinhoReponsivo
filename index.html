@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinhos & Sabores</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<script src="script.js"></script>
+<body>
+    <header>
+        <h1>Vinhos & Sabores</h1>
+        <nav>
+            <ul class="menu-principal">
+                <li class="menu-item">
+                    <a href="#">Tipos de Vinho</a>
+                    <ul class="submenu">
+                        <li><a href="#tinto">Vinho Tinto</a></li>
+                        <li><a href="#branco">Vinho Branco</a></li>
+                        <li><a href="#rose">Vinho Rosé</a></li>
+                        <li><a href="#espumante">Vinho Espumante</a></li>
+                        <li><a href="#porto">Vinho do Porto</a></li>
+                        <li><a href="#sobremesa">Vinho de Sobremesa</a></li>
+                        <li><a href="#fortificado">Vinho Fortificado</a></li>
+                        <li><a href="#verde">Vinho Verde</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                <li class="menu-item"><a href="#contato">Contato</a></li>
+                <!-- Adicione outros itens do menu se necessário -->
+            </ul>
+        </nav>
+    </header>
+    <!-- Barra de Pesquisa -->
+<section class="pesquisa">
+    <form action="#" method="get" class="search-bar">
+        <input type="text" name="q" placeholder="Pesquise o vinho que deseja...">
+        <button type="submit">Buscar</button>
+    </form>
+</section>   
+
+    <section id="destaques" class="destaques">
+        <h2>Destaques</h2>
+        <div class="grid-destaques">
+            <div class="carrossel">
+                <!-- Produtos em destaque -->
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300" alt="Produto Destaque 1">
+                    <h3>Produto Destaque 1</h3>
+                    <p>Descrição do produto destaque 1</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300" alt="Produto Destaque 2">
+                    <h3>Produto Destaque 2</h3>
+                    <p>Descrição do produto destaque 2</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300" alt="Produto Destaque 1">
+                    <h3>Produto Destaque 1</h3>
+                    <p>Descrição do produto destaque 1</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300" alt="Produto Destaque 2">
+                    <h3>Produto Destaque 2</h3>
+                    <p>Descrição do produto destaque 2</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300" alt="Produto Destaque 1">
+                    <h3>Produto Destaque 1</h3>
+                    <p>Descrição do produto destaque 1</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300" alt="Produto Destaque 2">
+                    <h3>Produto Destaque 2</h3>
+                    <p>Descrição do produto destaque 2</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300" alt="Produto Destaque 1">
+                    <h3>Produto Destaque 1</h3>
+                    <p>Descrição do produto destaque 1</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/300" alt="Produto Destaque 2">
+                    <h3>Produto Destaque 2</h3>
+                    <p>Descrição do produto destaque 2</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos em destaque aqui -->
+            </div>
+            <button class="botao-carrossel prev" onclick="moveCarrossel(-1)">&#10094;</button>
+            <button class="botao-carrossel next" onclick="moveCarrossel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre-loja">
+        <div class="coluna-imagem">
+            <img src="https://via.placeholder.com/600x400" alt="Imagem da Loja">
+        </div>
+        <div class="coluna-texto">
+            <h2>Sobre a Loja</h2>
+            <p>A Vinhos & Sabores é a sua loja especializada em vinhos selecionados para todos os gostos. Explore nossos produtos e descubra o melhor do mundo dos vinhos!</p>
+        </div>
+    </section>
+
+    <section id="tipos-vinho" class="tipos-vinho">
+        <h2>Tipos de Vinho</h2>
+
+        <!-- Vinhos Tintos -->
+        <div class="subsecao-tipo">
+            <h3>Vinhos Tintos</h3>
+            <div class="grid-produtos">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Cabernet Sauvignon">
+                    <h3>Cabernet Sauvignon</h3>
+                    <p>Descrição do Cabernet Sauvignon</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Merlot">
+                    <h3>Merlot</h3>
+                    <p>Descrição do Merlot</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Cabernet Sauvignon">
+                    <h3>Cabernet Sauvignon</h3>
+                    <p>Descrição do Cabernet Sauvignon</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Merlot">
+                    <h3>Merlot</h3>
+                    <p>Descrição do Merlot</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Cabernet Sauvignon">
+                    <h3>Cabernet Sauvignon</h3>
+                    <p>Descrição do Cabernet Sauvignon</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Merlot">
+                    <h3>Merlot</h3>
+                    <p>Descrição do Merlot</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Cabernet Sauvignon">
+                    <h3>Cabernet Sauvignon</h3>
+                    <p>Descrição do Cabernet Sauvignon</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Merlot">
+                    <h3>Merlot</h3>
+                    <p>Descrição do Merlot</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos de vinho tinto aqui -->
+            </div>
+        </div>
+
+        <!-- Vinhos Brancos -->
+        <div class="subsecao-tipo">
+            <h3>Vinhos Brancos</h3>
+            <div class="grid-produtos">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Chardonnay">
+                    <h3>Chardonnay</h3>
+                    <p>Descrição do Chardonnay</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sauvignon Blanc">
+                    <h3>Sauvignon Blanc</h3>
+                    <p>Descrição do Sauvignon Blanc</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Chardonnay">
+                    <h3>Chardonnay</h3>
+                    <p>Descrição do Chardonnay</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sauvignon Blanc">
+                    <h3>Sauvignon Blanc</h3>
+                    <p>Descrição do Sauvignon Blanc</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div> <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Chardonnay">
+                    <h3>Chardonnay</h3>
+                    <p>Descrição do Chardonnay</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sauvignon Blanc">
+                    <h3>Sauvignon Blanc</h3>
+                    <p>Descrição do Sauvignon Blanc</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div> <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Chardonnay">
+                    <h3>Chardonnay</h3>
+                    <p>Descrição do Chardonnay</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sauvignon Blanc">
+                    <h3>Sauvignon Blanc</h3>
+                    <p>Descrição do Sauvignon Blanc</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos de vinho branco aqui -->
+            </div>
+        </div>
+
+        <!-- Vinho Rosé -->
+        <div class="subsecao-tipo">
+            <h3>Vinho Rosé</h3>
+            <div class="grid-produtos">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Provence Rosé">
+                    <h3>Provence Rosé</h3>
+                    <p>Descrição do Provence Rosé</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Rosé de Grenache">
+                    <h3>Rosé de Grenache</h3>
+                    <p>Descrição do Rosé de Grenache</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Provence Rosé">
+                    <h3>Provence Rosé</h3>
+                    <p>Descrição do Provence Rosé</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Rosé de Grenache">
+                    <h3>Rosé de Grenache</h3>
+                    <p>Descrição do Rosé de Grenache</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div> <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Provence Rosé">
+                    <h3>Provence Rosé</h3>
+                    <p>Descrição do Provence Rosé</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Rosé de Grenache">
+                    <h3>Rosé de Grenache</h3>
+                    <p>Descrição do Rosé de Grenache</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div> <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Provence Rosé">
+                    <h3>Provence Rosé</h3>
+                    <p>Descrição do Provence Rosé</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Rosé de Grenache">
+                    <h3>Rosé de Grenache</h3>
+                    <p>Descrição do Rosé de Grenache</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos de vinho rosé aqui -->
+            </div>
+        </div>
+
+        <!-- Vinho Espumante -->
+        <div class="subsecao-tipo">
+            <h3>Vinho Espumante</h3>
+            <div class="grid-produtos">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Champagne">
+                    <h3>Champagne</h3>
+                    <p>Descrição do Champagne</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Prosecco">
+                    <h3>Prosecco</h3>
+                    <p>Descrição do Prosecco</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Champagne">
+                    <h3>Champagne</h3>
+                    <p>Descrição do Champagne</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Prosecco">
+                    <h3>Prosecco</h3>
+                    <p>Descrição do Prosecco</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div><div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Champagne">
+                    <h3>Champagne</h3>
+                    <p>Descrição do Champagne</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Prosecco">
+                    <h3>Prosecco</h3>
+                    <p>Descrição do Prosecco</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div><div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Champagne">
+                    <h3>Champagne</h3>
+                    <p>Descrição do Champagne</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Prosecco">
+                    <h3>Prosecco</h3>
+                    <p>Descrição do Prosecco</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos de vinho espumante aqui -->
+            </div>
+        </div>
+
+        <!-- Vinho do Porto -->
+        <div class="subsecao-tipo">
+            <h3>Vinho do Porto</h3>
+            <div class="grid-produtos">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Ruby Port">
+                    <h3>Ruby Port</h3>
+                    <p>Descrição do Ruby Port</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Tawny Port">
+                    <h3>Tawny Port</h3>
+                    <p>Descrição do Tawny Port</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Ruby Port">
+                    <h3>Ruby Port</h3>
+                    <p>Descrição do Ruby Port</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Tawny Port">
+                    <h3>Tawny Port</h3>
+                    <p>Descrição do Tawny Port</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div> <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Ruby Port">
+                    <h3>Ruby Port</h3>
+                    <p>Descrição do Ruby Port</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Tawny Port">
+                    <h3>Tawny Port</h3>
+                    <p>Descrição do Tawny Port</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div> <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Ruby Port">
+                    <h3>Ruby Port</h3>
+                    <p>Descrição do Ruby Port</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Tawny Port">
+                    <h3>Tawny Port</h3>
+                    <p>Descrição do Tawny Port</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div> <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Ruby Port">
+                    <h3>Ruby Port</h3>
+                    <p>Descrição do Ruby Port</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Tawny Port">
+                    <h3>Tawny Port</h3>
+                    <p>Descrição do Tawny Port</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos de vinho do porto aqui -->
+            </div>
+        </div>
+
+        <!-- Vinho de Sobremesa -->
+        <div class="subsecao-tipo">
+            <h3>Vinho de Sobremesa</h3>
+            <div class="grid-produtos">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sauternes">
+                    <h3>Sauternes</h3>
+                    <p>Descrição do Sauternes</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Tokaji">
+                    <h3>Tokaji</h3>
+                    <p>Descrição do Tokaji</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sauternes">
+                    <h3>Sauternes</h3>
+                    <p>Descrição do Sauternes</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Tokaji">
+                    <h3>Tokaji</h3>
+                    <p>Descrição do Tokaji</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div> <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sauternes">
+                    <h3>Sauternes</h3>
+                    <p>Descrição do Sauternes</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Tokaji">
+                    <h3>Tokaji</h3>
+                    <p>Descrição do Tokaji</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div> <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sauternes">
+                    <h3>Sauternes</h3>
+                    <p>Descrição do Sauternes</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Tokaji">
+                    <h3>Tokaji</h3>
+                    <p>Descrição do Tokaji</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos de vinho de sobremesa aqui -->
+            </div>
+        </div>
+
+        <!-- Vinho Fortificado -->
+        <div class="subsecao-tipo">
+            <h3>Vinho Fortificado</h3>
+            <div class="grid-produtos">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Madeira">
+                    <h3>Madeira</h3>
+                    <p>Descrição do Madeira</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sherry">
+                    <h3>Sherry</h3>
+                    <p>Descrição do Sherry</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Madeira">
+                    <h3>Madeira</h3>
+                    <p>Descrição do Madeira</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sherry">
+                    <h3>Sherry</h3>
+                    <p>Descrição do Sherry</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div><div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Madeira">
+                    <h3>Madeira</h3>
+                    <p>Descrição do Madeira</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sherry">
+                    <h3>Sherry</h3>
+                    <p>Descrição do Sherry</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div><div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Madeira">
+                    <h3>Madeira</h3>
+                    <p>Descrição do Madeira</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Sherry">
+                    <h3>Sherry</h3>
+                    <p>Descrição do Sherry</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos de vinho fortificado aqui -->
+            </div>
+        </div>
+
+        <!-- Vinho Verde -->
+        <div class="subsecao-tipo">
+            <h3>Vinho Verde</h3>
+            <div class="grid-produtos">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Vinho Verde (Portugal)">
+                    <h3>Vinho Verde (Portugal)</h3>
+                    <p>Descrição do Vinho Verde (Portugal)</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Vinho Verde (Portugal)">
+                    <h3>Vinho Verde (Portugal)</h3>
+                    <p>Descrição do Vinho Verde (Portugal)</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div><div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Vinho Verde (Portugal)">
+                    <h3>Vinho Verde (Portugal)</h3>
+                    <p>Descrição do Vinho Verde (Portugal)</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div><div class="produto">
+                    <img src="https://via.placeholder.com/200" alt="Vinho Verde (Portugal)">
+                    <h3>Vinho Verde (Portugal)</h3>
+                    <p>Descrição do Vinho Verde (Portugal)</p>
+                    <button class="adicionar">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Adicione mais produtos de vinho verde aqui -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vinhos & Sabores - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let index = 0;
+
+        function moveCarrossel(step) {
+            const carrossel = document.querySelector('.carrossel');
+            const totalItems = carrossel.children.length;
+            index = (index + step + totalItems) % totalItems;
+            carrossel.style.transform = `translateX(-${index * 300}px)`;
+        }
+    </script>
+</body>
+</html>
